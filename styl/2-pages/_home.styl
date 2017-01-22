@@ -1,0 +1,121 @@
+#home
+  section#hero
+    // background-image: linear-gradient(rgba($black,0.5), rgba($black,0.5)), url("../img/bg2.jpg")
+    background-image: linear-gradient(rgba($white,0.7), rgba($white,0.7)), url("../img/hero-bg.png")
+    // background-color $white
+    // min-height: 100vh
+    min-height: 680px
+    .wrapper
+      max-width 800px
+      #logo
+        #logo--rocket
+          transition: transform 200ms ease-in
+          transform: translate(0,0)
+        rect
+          transition: 200ms ease-in-out
+        &:hover
+          #logo--rocket
+            transform: translate(60px, -60px)
+          rect
+            fill: $orange
+      p
+        font-size: 1.5em
+        font-family: "Roboto"
+        font-weight: 200
+        letter-spacing: 2px
+        color: $black
+        text-align: center
+
+  section#apply
+    background-color $teal
+    color: $white
+    min-height 500px
+    @media (max-width 800px)
+      min-height 0
+    .wrapper
+      p
+        text-align center
+      .button-cta
+        display inline-block
+        color $white
+        border 3px solid $white
+        border-radius 10em
+        padding 0.75em 1.5em
+        text-decoration none
+        margin-top 1.5em
+        font-size 1.25em
+        transition 200ms ease-in-out
+        &:hover
+          background-color $white
+          color $teal
+
+  section#testimonials
+    background-image: linear-gradient(rgba($black, 0.65), rgba($black, 0.65)), url("../img/business-bg.jpg")
+    // background-color $teal
+    color: $white
+    min-height 680px
+    @media (max-width 1000px)
+      min-height 1200px
+    @media (max-width 800px)
+      min-height 0
+    .testimonials-container
+      display flex
+      align-items flex-start
+      padding-top 3em
+      @media (max-width 1000px)
+        display block
+      .testimonial
+        background-color rgba($white, 0.85)
+        margin 0.5em 1em
+        padding 2em
+        border-radius 1em
+        position: relative
+        padding-top 4em
+        flex 1
+        @media (max-width 1000px)
+          width 100%
+          max-width 600px
+          margin: 4em auto
+        .testimonial--image
+          width 80px
+          height 80px
+          object-fit cover
+          border-radius 100%
+          border 2px solid #bbb
+          position: absolute
+          top -40px
+          left 50%
+          transform: translateX(-50%)
+        .testimonial--text
+          line-height 1.25
+          color #444
+          text-align justify
+        .testimonial--author
+          line-height 1.5
+          padding-top 1em
+          color #444
+          text-align left
+          .author-name
+            font-weight bold
+          .author-title
+            font-size 0.9em
+            a
+              color #444
+              font-weight bold
+              
+  section#partners
+    background-color $white
+    color $black
+    min-height 400px
+    .wrapper
+      max-width 720px
+      p
+        text-align center
+        font-size 1.25em
+        line-height 1.45
+        font-weight 500
+        padding-bottom 2em
+        display none
+      .partner-logos
+        width 100%
+        opacity: 0.4

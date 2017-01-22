@@ -1,0 +1,23 @@
+footer
+  background-color $orange
+  padding 3em 0
+  text-align center
+  color $white
+  font-family 'Lato'
+  a
+    color lighten($orange, 50%)
+    font-weight 700
+    text-decoration none
+    &:hover
+      color lighten($orange, 60%)
+  #icon
+    width 40px
+    fill: darken($orange, 25%)
+    transition: 200ms ease-in-out
+    #icon--rocket
+      transition: transform 200ms ease-in-out
+      transform: translate(0,0)
+    &:hover
+      fill: darken($orange, 20%)
+      #icon--rocket
+        transform: translate(3px, -3px)

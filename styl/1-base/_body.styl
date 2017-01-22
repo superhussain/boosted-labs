@@ -1,0 +1,46 @@
+*
+  box-sizing: border-box
+body
+  overflow-x: hidden
+section
+  background-color: $white
+  background-size: cover
+  background-position: center
+  background-attachment: fixed
+  color: $black
+  min-height: 640px
+  overflow: hidden
+  position: relative
+  &.section--shadow
+    box-shadow 0 40px 40px -20px rgba($black, 0.5)
+  .wrapper
+    width: 95%
+    max-width: 1000px
+    margin: 0 auto
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    text-align: center
+    font-family: "Lato"
+    h2
+      font-size: 2.5em
+      text-transform: uppercase
+      font-weight: 900
+      letter-spacing: 4px
+      font-family: "Lato"
+    p
+      font-size: 1.2em
+      text-align: justify
+      line-height: 1.5
+      font-weight: 300
+
+section:not(#hero)
+  @media (max-width 800px)
+    min-height 0
+    .wrapper
+      transform: none
+      position: relative
+      top 0
+      left 0
+      padding: 3em 1em
